@@ -1,6 +1,6 @@
 import {Page, Locator} from '@playwright/test';
 
-export class LandingPage {
+export class landingPage {
   readonly page: Page;
   readonly registerButton: Locator;
 
@@ -9,4 +9,3 @@ export class LandingPage {
     this.registerButton = page.getByRole('link', {name: 'Registrarse'}).first(); 
   }
 }
-
